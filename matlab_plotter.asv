@@ -1,0 +1,20 @@
+close all
+clear all
+d=
+
+%% Get data
+DELIMITER = ' ';
+HEADERLINES = 23; % 24 is wrong and 23 is correct. But if it does not work for 23 just use 24. You can check whether the is no space between the numbers in the ddfield.E file.
+field=importdata('ddfield.E',DELIMITER, HEADERLINES);
+data=field.data;
+x=data(:,1)
+y=data(:,2)
+e=sqrt((abs(complex(data(:,4),data(:,5)))).^2+(abs(complex(data(:,6),data(:,7)))).^2+(abs(complex(data(:,8),data(:,9)))).^2)
+xr=reshape(x,101,101)
+xy=reshape(y,101,101)
+xe=reshape(e,101,101)
+pcolor(xr*2,xy*2,xe)
+shading interp
+xlabel('x')
+ylabel('y')
+axis square

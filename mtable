@@ -1,0 +1,9 @@
+ DDSCAT --- DDSCAT 7.1.0 [10.03.03]   
+ TARGET --- Sphere,  14328 dipoles, 1.000 1.000 1.000=x,y,z lattice spacing   
+ GPFAFT --- method of solution 
+ GKDLDR --- prescription for polarizabilities
+ ELLIPSOID --- shape 
+  14328 = NAT0 = number of dipoles
+ gold.tab                                                    
+ wave(um)   f(cm-1)     Re(m)     Im(m)    Re(eps)   Im(eps)
+5.1200E-01 1.9531E+04 7.585E-01 1.969E+00-3.302E+00 2.987E+00
